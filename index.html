@@ -7,16 +7,17 @@
 </head>
 <body>
   <h1>The Async Force Ep 2</h1>
-  <select name="resourceType" id="resourceType">
+  <select name="resourceType" id="resourceType" onchange="myFunction(this)">
+    <option value="default" selected>Select</option>
     <option value="people">Person</option>
     <option value="planets">Planet</option>
     <option value="starships">Starship</option>
   </select>
   <input id="resourceId" type="text" placeholder=":id"/>
-  <button id="requestResourceButton">Request Resource</button>
+  <button id="requestResourceButton" onclick="requestResource()">Request Resource</button>
 
   <div id="contentContainer"></div>
 
-
+  <script src="js/app.js"></script>
 </body>
 </html>
